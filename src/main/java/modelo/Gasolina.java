@@ -1,13 +1,43 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
-/**
- *
- * @author Is Dahud
- */
 public class Gasolina {
     
+    private int idGasolina;
+    private String tipo;
+    private float precio;
+    
+    public Gasolina(){
+        
+    }
+    
+    public Gasolina(int x,String y, float z){
+        idGasolina=x;
+        tipo=y;
+        precio=z;
+    }
+    
+    public Gasolina(Gasolina Glina){
+        
+    }
+    
+    public void setIdGasolina(int x){
+        idGasolina=x;
+    }
+    public int getIdGasolina(){
+        return idGasolina;
+    }
+    public void setTipo(String y){
+        tipo=y;
+    }
+    public String getTipo(){
+        return tipo;
+    }
+    public void setPrecio(float z){
+        precio=z;
+    }
+    public float getPrecio(){
+       return precio; 
+    }
+        
 }
+
