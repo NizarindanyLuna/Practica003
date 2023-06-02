@@ -26,21 +26,145 @@ public class dlgBombas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel3 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        txtCantidad = new javax.swing.JTextField();
+        btnRegistrar = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txtTVentas = new javax.swing.JTextField();
+        txtCosto = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtNBomba = new javax.swing.JTextField();
+        txtPVentas = new javax.swing.JTextField();
+        txtCVentas = new javax.swing.JTextField();
+        ComboTGas = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
+        btnIBomba = new javax.swing.JButton();
+        SliderCBomba = new javax.swing.JSlider();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "HACER VENTA", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 0, 14))); // NOI18N
+        jPanel3.setLayout(null);
+
+        jLabel6.setText("Cantidad");
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(80, 30, 60, 16);
+
+        txtCantidad.setEnabled(false);
+        txtCantidad.setName("txtCantidad"); // NOI18N
+        jPanel3.add(txtCantidad);
+        txtCantidad.setBounds(50, 60, 100, 22);
+
+        btnRegistrar.setText("Registrar");
+        btnRegistrar.setEnabled(false);
+        btnRegistrar.setName("btnRegistrar"); // NOI18N
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnRegistrar);
+        btnRegistrar.setBounds(190, 60, 100, 23);
+
+        jLabel7.setText("Total de Ventas $");
+        jPanel3.add(jLabel7);
+        jLabel7.setBounds(310, 80, 100, 16);
+
+        jLabel8.setText("Costo $");
+        jPanel3.add(jLabel8);
+        jLabel8.setBounds(360, 40, 60, 16);
+
+        txtTVentas.setEnabled(false);
+        txtTVentas.setName("txtTVentas"); // NOI18N
+        jPanel3.add(txtTVentas);
+        txtTVentas.setBounds(410, 80, 120, 22);
+
+        txtCosto.setEnabled(false);
+        txtCosto.setName("txtCosto"); // NOI18N
+        jPanel3.add(txtCosto);
+        txtCosto.setBounds(410, 40, 110, 22);
+
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(10, 270, 560, 129);
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "INICIAR BOMBA", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 18))); // NOI18N
+        jPanel1.setLayout(null);
+
+        jLabel1.setText("Num. Bomba");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(30, 30, 71, 16);
+
+        jLabel2.setText("Tipo de Gasolina");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(150, 30, 90, 16);
+
+        jLabel3.setText("Contador de ventas");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(300, 30, 120, 16);
+
+        jLabel4.setText("Precio venta");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(340, 60, 80, 16);
+
+        txtNBomba.setToolTipText("");
+        txtNBomba.setName("txtNBomba"); // NOI18N
+        jPanel1.add(txtNBomba);
+        txtNBomba.setBounds(30, 50, 64, 22);
+
+        txtPVentas.setEnabled(false);
+        txtPVentas.setName("txtPVentas"); // NOI18N
+        jPanel1.add(txtPVentas);
+        txtPVentas.setBounds(420, 60, 100, 22);
+
+        txtCVentas.setEnabled(false);
+        txtCVentas.setName("txtCVentas"); // NOI18N
+        jPanel1.add(txtCVentas);
+        txtCVentas.setBounds(420, 30, 110, 22);
+
+        ComboTGas.setEditable(true);
+        ComboTGas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Diesel", "Premium" }));
+        ComboTGas.setName("ComTGas"); // NOI18N
+        jPanel1.add(ComboTGas);
+        ComboTGas.setBounds(150, 50, 110, 22);
+
+        jLabel5.setText("Capacidad de la bomba");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(40, 180, 160, 16);
+
+        btnIBomba.setText("Iniciar Bomba");
+        btnIBomba.setName("btnIBomba"); // NOI18N
+        jPanel1.add(btnIBomba);
+        btnIBomba.setBounds(380, 190, 120, 40);
+
+        SliderCBomba.setMajorTickSpacing(100);
+        SliderCBomba.setMaximum(200);
+        SliderCBomba.setMinorTickSpacing(20);
+        SliderCBomba.setPaintLabels(true);
+        SliderCBomba.setPaintTicks(true);
+        SliderCBomba.setValue(0);
+        SliderCBomba.setRequestFocusEnabled(false);
+        SliderCBomba.setValueIsAdjusting(true);
+        SliderCBomba.setVerifyInputWhenFocusTarget(false);
+        jPanel1.add(SliderCBomba);
+        SliderCBomba.setBounds(20, 110, 510, 60);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(10, 10, 560, 252);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +202,25 @@ public class dlgBombas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JComboBox<String> ComboTGas;
+    public javax.swing.JSlider SliderCBomba;
+    public javax.swing.JButton btnIBomba;
+    public javax.swing.JButton btnRegistrar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
+    public javax.swing.JTextField txtCVentas;
+    public javax.swing.JTextField txtCantidad;
+    public javax.swing.JTextField txtCosto;
+    public javax.swing.JTextField txtNBomba;
+    public javax.swing.JTextField txtPVentas;
+    public javax.swing.JTextField txtTVentas;
     // End of variables declaration//GEN-END:variables
 }
