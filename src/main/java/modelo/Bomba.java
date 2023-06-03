@@ -31,7 +31,7 @@ public class Bomba {
     }
 
     public void setALitros(float aLitros) {
-        this.aLitros = aLitros;
+        this.aLitros += aLitros;
     }
 
     public void setGas(Gasolina gas) {

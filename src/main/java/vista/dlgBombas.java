@@ -88,6 +88,11 @@ public class dlgBombas extends javax.swing.JFrame {
 
         txtCosto.setEnabled(false);
         txtCosto.setName("txtCosto"); // NOI18N
+        txtCosto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCostoActionPerformed(evt);
+            }
+        });
         jPanel3.add(txtCosto);
         txtCosto.setBounds(410, 40, 110, 22);
 
@@ -165,6 +170,10 @@ public class dlgBombas extends javax.swing.JFrame {
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnRegistrarActionPerformed
+
+    private void txtCostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCostoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCostoActionPerformed
 
     /**
      * @param args the command line arguments
