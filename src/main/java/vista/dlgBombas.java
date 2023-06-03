@@ -135,7 +135,7 @@ public class dlgBombas extends javax.swing.JFrame {
         txtCVentas.setBounds(420, 30, 110, 22);
 
         ComboTGas.setEditable(true);
-        ComboTGas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Diesel", "Premium" }));
+        ComboTGas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Regular", "Diesel", "Premium" }));
         ComboTGas.setName("ComTGas"); // NOI18N
         jPanel1.add(ComboTGas);
         ComboTGas.setBounds(150, 50, 110, 22);

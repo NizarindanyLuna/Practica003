@@ -249,10 +249,11 @@
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="3">
-                <StringItem index="0" value="Regular"/>
-                <StringItem index="1" value="Diesel"/>
-                <StringItem index="2" value="Premium"/>
+              <StringArray count="4">
+                <StringItem index="0" value=" "/>
+                <StringItem index="1" value="Regular"/>
+                <StringItem index="2" value="Diesel"/>
+                <StringItem index="3" value="Premium"/>
               </StringArray>
             </Property>
             <Property name="name" type="java.lang.String" value="ComTGas" noResource="true"/>
